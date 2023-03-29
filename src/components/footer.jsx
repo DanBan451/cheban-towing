@@ -27,7 +27,7 @@ export default function Footer({ quoteHandler }) {
             <Link to={"/contact"}>Contact Us</Link>
           </li>
         </ul>
-        <Link className={`btn ${classes.quoteBtn}`} to={"/contact"}>
+        <Link className={`btn ${classes.quoteBtn}`} to={"tel:+18645109105"}>
           Call: 864-510-9105
         </Link>
       </div>

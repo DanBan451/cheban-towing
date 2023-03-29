@@ -74,7 +74,7 @@ function NavbarComponent({ navigation }) {
             </NavLink>
           </Nav>
           <div className="d-flex options-container">
-            <Link className="btn quote-btn" to={"/contact"}>
+            <Link className="btn quote-btn" to={"tel:+18645109105"}>
               Call: 864-510-9105
             </Link>
           </div>

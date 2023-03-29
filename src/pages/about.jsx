@@ -59,7 +59,7 @@ export default class About extends Component {
               needs!
             </p>
             <div className={classes.links}>
-              <Link to="/contact" className={`btn ${classes.link}`}>
+              <Link to={"tel:+18645109105"} className={`btn ${classes.link}`}>
                 Call: 864-510-9105
               </Link>
               <Link to="/services" className={`btn ${classes.link}`}>
