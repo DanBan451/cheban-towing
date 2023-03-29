@@ -9,7 +9,7 @@
 }
 .logo {
   width: 200px;  
-  margin-left: -15px;
+  /* margin-left: -15px; */
 }
 a.navlink.nav-link {
   color: red;
@@ -20,7 +20,7 @@ a.navlink.nav-link {
   font-size: 17px;
   font-family: 'Poppins', sans-serif;	
   color: black;
-  /* padding: 15px;     */
+  padding: 15px;    
 }
 .navLink:hover {
   color: #FF4C00;
