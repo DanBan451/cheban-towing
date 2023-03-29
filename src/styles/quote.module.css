@@ -1,0 +1,44 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.wrapper h1 {
+    font-size: 25px; 
+    font-weight: 400;
+}
+
+.wrapper .link {
+  width: max-content;
+  margin-bottom: auto;
+  border-color: white;
+  font-size: 20px;
+  margin-top: 20px;
+
+  border: 1px solid #ff4c00;
+  background-color: #ff4c00;
+  color: white;
+  font-weight: 600;
+}
+.wrapper .link:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+
+@media screen and (min-width: 650px) {
+    .wrapper h1 {
+        font-size: 30px; 
+    }
+    .wrapper br {
+        display: none;
+    } 
+}
+
+

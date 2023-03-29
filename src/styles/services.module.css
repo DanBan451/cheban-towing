@@ -1,0 +1,113 @@
+/* style={{ backgroundImage: `url(${bridge})`}} */
+
+.services .background {
+  position: relative;
+}
+.services .background:after {
+  content: "";
+  background: url("../assets/bridge.jpg") no-repeat center center;
+  position: absolute;
+  background-position: 0% 20%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.wrapper {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: auto;
+  padding-bottom: 5vh;  
+}
+
+.content {  
+  width: max-content;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);    
+}
+.content > * {
+  margin: auto;
+}
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 4vh;
+}
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content ul li img {
+  width: 15px;
+  margin-right: 10px;
+}
+.content ul li span {
+  font-size: 20px;
+}
+
+.quote {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.quote h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.quote .link {
+  width: max-content;
+  border-color: white;
+  margin-bottom: auto;
+  border: 1px solid #ff4c00;
+  background-color: #ff4c00;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.quote .link:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+
+@media screen and (min-width: 400px) {
+  .content {
+    width: 90%;
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .quote {
+    margin: auto;
+  }
+  .content {
+    margin-bottom: 0;
+  }
+}

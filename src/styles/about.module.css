@@ -1,0 +1,166 @@
+.header {    
+    height: 50vh;        
+    /* background-image: linear-gradient(90deg, rgba(255,76,0,1) 23%, rgba(255,125,70,0) 46%, rgba(255,255,255,0) 100%), url("../assets/belts.jpg"); */
+    background-image: linear-gradient(90deg, rgba(255,76,0,0.9) 59%, rgba(255,255,255,0) 100%), url("../assets/belts.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;   
+    margin-bottom: 10vh; 
+}
+.header .content h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+.header .content > * {
+    color: white;
+}
+.header .content {
+    width: 100%;
+    height: auto;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;    
+    display: flex;
+    flex-direction: column; 
+    /* added */
+    /* padding-left: 27px;     */
+    /* margin-left: 50px;     */
+    /* background-color: whitesmoke;    */
+}
+.header p {
+    max-width: 500px;
+    font-size: 20px;
+}
+.header a {
+    margin-top: auto;  
+    margin-bottom: 10px;          
+}
+.header a img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.header .content {
+    max-width: 1500px;
+    padding-right: 27px;
+    padding-left: 27px;        
+}
+
+@media screen and (min-width: 900px) {
+    .header {                    
+        background-image: linear-gradient(90deg, rgba(255,76,0,1) 44%, rgba(255,157,115,0) 87%, rgba(255,255,255,0.5144651610644257) 100%), url("../assets/belts.jpg");
+    }   
+}
+@media screen and (min-width: 1200px) {
+    .header {                    
+        background-image: linear-gradient(90deg, rgba(255,76,0,1) 23%, rgba(255,125,70,0) 46%, rgba(255,255,255,0) 100%), url("../assets/belts.jpg");
+    }   
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    gap: 100px;
+}
+.main > * {
+    /* border: 1px solid red; */
+}
+.main .photos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;    
+}
+.main .photos img {
+    width: 95%;    
+    height: 400px;
+    max-width: 500px; 
+    object-fit: cover;    
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .main .photos {
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;   
+        transform: translateX(-75px);      
+    }
+    .main .photos img {
+        margin: 0;        
+    }
+    .main .photos :last-child {
+        width: 400px;
+        height: 300px;
+        position: absolute; 
+        bottom: -195px;        
+        transform: translateX(200px);        
+    }
+    .main {        
+        gap: 200px
+    }
+}
+
+.main .context {
+    width: 95%;
+    margin: auto;
+    max-width: 500px;        
+}
+.main .context h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.main .context p, .main .context .link {
+    font-size: 20px;
+}
+.main .context .link {
+    border: 1px solid #ff4c00;
+    background-color: #ff4c00;
+    color: white;
+    margin-right: 30px;
+}
+.main .context .link:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+
+@media screen and (min-width: 800px) {
+    .main .context {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .main {
+        flex-direction: row;
+        gap: 0;        
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    .main .context {
+        max-width: 500px;
+    }
+    .main .photos {
+        transform: translateX(0px);    
+        width: 50%;    
+        justify-content: left;        
+    }
+    .main .photos img {        
+        height: 500px;
+    }
+    .main .photos :last-child {
+        height: 300px;
+        width: 400px;        
+        bottom: 0px;
+        transform: translateX(250px);
+        border: 5px solid white;     
+        border-bottom: none;  
+    }
+    .main .context {
+        margin-right: 50px;
+        margin: auto;
+        height: auto;
+    }    
+}
