@@ -58,12 +58,14 @@ export default class About extends Component {
               Call R. Cheban Towing for all your roadside assistance and towing
               needs!
             </p>
-            <Link to="/contact" className={`btn ${classes.link}`}>
-              Call: 864-510-9105
-            </Link>
-            <Link to="/services" className={`btn ${classes.link}`}>
-              See Our Services
-            </Link>
+            <div className={classes.links}>
+              <Link to="/contact" className={`btn ${classes.link}`}>
+                Call: 864-510-9105
+              </Link>
+              <Link to="/services" className={`btn ${classes.link}`}>
+                See Our Services
+              </Link>
+            </div>
           </div>
         </div>
         <Footer />
