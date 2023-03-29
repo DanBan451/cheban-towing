@@ -123,6 +123,7 @@ export default class Contact extends Component {
               type="text"
               onChange={this.handleChange}
               value={name}
+              style={{ outline: "none" }}
             />
             {this.state.errors?.name && (
               <div className={`alert alert-danger ${classes.error}`}>
@@ -135,6 +136,7 @@ export default class Contact extends Component {
               type="text"
               onChange={this.handleChange}
               value={location}
+              style={{ outline: "none" }}
             />
             {this.state.errors?.location && (
               <div className={`alert alert-danger ${classes.error}`}>
@@ -147,6 +149,7 @@ export default class Contact extends Component {
               name="phone"
               onChange={this.handleChange}
               value={phone}
+              style={{ outline: "none" }}
             />
             {this.state.errors?.phone && (
               <div className={`alert alert-danger ${classes.error}`}>
@@ -159,6 +162,7 @@ export default class Contact extends Component {
               name="email"
               onChange={this.handleChange}
               value={email}
+              style={{ outline: "none" }}
             />
             {this.state.errors?.email && (
               <div className={`alert alert-danger ${classes.error}`}>
