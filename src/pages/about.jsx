@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { animateScroll as scroll } from 'react-scroll';
+import smoothscroll from "smoothscroll-polyfill";
 
 import Footer from "../components/footer";
 import NavbarComponent from "../components/navbar";
@@ -10,6 +10,8 @@ import classes from "../styles/about.module.css";
 import icon from "../assets/downArrow.svg";
 import truckface from "../assets/trucksface.jpg";
 import porshe from "../assets/porshe.jpeg";
+
+smoothscroll.polyfill();
 
 export default class About extends Component {
   render() {
@@ -29,12 +31,19 @@ export default class About extends Component {
               <br />
               We are ready to help!
             </p>
-            <Link to="#" onClick={() => document.getElementById('main').scrollIntoView()}>
+            <Link
+              to="#"
+              onClick={() =>
+                document.querySelector("#main").scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
               <img src={icon} />
             </Link>
           </div>
         </div>
-        <div id='main' className={classes.main}>
+        <div id="main" className={classes.main}>
           <div className={classes.photos}>
             <img src={truckface} alt="" />
             <img src={porshe} alt="" />
