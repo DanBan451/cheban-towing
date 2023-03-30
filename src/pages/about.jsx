@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from 'react-scroll';
 
 import Footer from "../components/footer";
 import NavbarComponent from "../components/navbar";
@@ -28,9 +29,9 @@ export default class About extends Component {
               <br />
               We are ready to help!
             </p>
-            <a href="#main">
+            <Link to="#" onClick={() => document.getElementById('main').scrollIntoView()}>
               <img src={icon} />
-            </a>
+            </Link>
           </div>
         </div>
         <div id='main' className={classes.main}>

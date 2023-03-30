@@ -43,7 +43,7 @@ export default class Service extends Component {
             </div>
             <div className={classes.quote}>
                 <h1>Call us today for a free quote<br /> and fast service!</h1>
-                <Link to="/contact" className={`btn ${classes.link}`}>Call: 864-510-9105</Link>     
+                <Link to={"tel:+18645109105"} className={`btn ${classes.link}`}>Call: 864-510-9105</Link>     
             </div>
           </div>
         </div>                
