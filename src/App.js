@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Services from "./pages/service";
 import Contact from "./pages/contact";
+import ScrollToTop from "./utils/scrollToTop";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <Suspense fallback={null}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

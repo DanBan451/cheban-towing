@@ -12,6 +12,7 @@ import classes from "../styles/home.module.css";
 
 export default class Home extends Component {
   render() {
+    console.log('hello from home');
     return (
       <React.Fragment>
         <NavbarComponent />

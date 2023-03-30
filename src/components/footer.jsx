@@ -18,7 +18,7 @@ export default function Footer({ quoteHandler }) {
             <Link to={"/home"}>Home</Link>
           </li>
           <li>
-            <Link to={"/service"}>Services</Link>
+            <Link to={"/services"}>Services</Link>
           </li>
           <li>
             <Link to={"/about"}>About Us</Link>
